@@ -1,0 +1,4500 @@
+<api
+  api-source="class-parse">
+  <package
+    name="com.daimajia.swipe"
+    jni-name="com/daimajia/swipe">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="true"
+      name="BuildConfig"
+      jni-signature="Lcom/daimajia/swipe/BuildConfig;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BuildConfig"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="APPLICATION_ID"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;com.daimajia.swipe&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="BUILD_TYPE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;release&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="DEBUG"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="boolean"
+        type-generic-aware="boolean"
+        jni-signature="Z"
+        value="false"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="FLAVOR"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;&quot;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_CODE"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="-1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="VERSION_NAME"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="java.lang.String"
+        type-generic-aware="java.lang.String"
+        jni-signature="Ljava/lang/String;"
+        value="&quot;&quot;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SimpleSwipeListener"
+      jni-signature="Lcom/daimajia/swipe/SimpleSwipeListener;"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.daimajia.swipe.SwipeLayout.SwipeListener"
+        name-generic-aware="com.daimajia.swipe.SwipeLayout.SwipeListener"
+        jni-type="Lcom/daimajia/swipe/SwipeLayout$SwipeListener;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SimpleSwipeListener"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClose"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onHandRelease"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;FF)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+        <parameter
+          name="xvel"
+          type="float"
+          jni-type="F" />
+        <parameter
+          name="yvel"
+          type="float"
+          jni-type="F" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onOpen"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onStartClose"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onStartOpen"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onUpdate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;II)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+        <parameter
+          name="leftOffset"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="topOffset"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/widget/FrameLayout;"
+      extends="android.widget.FrameLayout"
+      extends-generic-aware="android.widget.FrameLayout"
+      final="false"
+      name="SwipeLayout"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SwipeLayout"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SwipeLayout"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="attrs"
+          type="android.util.AttributeSet"
+          jni-type="Landroid/util/AttributeSet;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SwipeLayout"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/util/AttributeSet;I)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="attrs"
+          type="android.util.AttributeSet"
+          jni-type="Landroid/util/AttributeSet;" />
+        <parameter
+          name="defStyle"
+          type="int"
+          jni-type="I" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addOnLayoutListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout$OnLayout;)V">
+        <parameter
+          name="l"
+          type="com.daimajia.swipe.SwipeLayout.OnLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$OnLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addRevealListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILcom/daimajia/swipe/SwipeLayout$OnRevealListener;)V">
+        <parameter
+          name="childId"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="l"
+          type="com.daimajia.swipe.SwipeLayout.OnRevealListener"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$OnRevealListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addRevealListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="([ILcom/daimajia/swipe/SwipeLayout$OnRevealListener;)V">
+        <parameter
+          name="childIds"
+          type="int[]"
+          jni-type="[I" />
+        <parameter
+          name="l"
+          type="com.daimajia.swipe.SwipeLayout.OnRevealListener"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$OnRevealListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addSwipeDenier"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout$SwipeDenier;)V">
+        <parameter
+          name="denier"
+          type="com.daimajia.swipe.SwipeLayout.SwipeDenier"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$SwipeDenier;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="addSwipeListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout$SwipeListener;)V">
+        <parameter
+          name="l"
+          type="com.daimajia.swipe.SwipeLayout.SwipeListener"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$SwipeListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="close"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="close"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="smooth"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="close"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ZZ)V">
+        <parameter
+          name="smooth"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="notify"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="computeScroll"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="dispatchRevealEvent"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(IIII)V">
+        <parameter
+          name="surfaceLeft"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceTop"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceRight"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceBottom"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="dispatchSwipeEvent"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(IIII)V">
+        <parameter
+          name="surfaceLeft"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceTop"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="dx"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="dy"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="dispatchSwipeEvent"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(IIZ)V">
+        <parameter
+          name="surfaceLeft"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceTop"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="open"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getBottomView"
+        native="false"
+        return="android.view.ViewGroup"
+        jni-return="Landroid/view/ViewGroup;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/view/ViewGroup;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getDragDistance"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()I" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getDragEdge"
+        native="false"
+        return="com.daimajia.swipe.SwipeLayout.DragEdge"
+        jni-return="Lcom/daimajia/swipe/SwipeLayout$DragEdge;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/daimajia/swipe/SwipeLayout$DragEdge;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenStatus"
+        native="false"
+        return="com.daimajia.swipe.SwipeLayout.Status"
+        jni-return="Lcom/daimajia/swipe/SwipeLayout$Status;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/daimajia/swipe/SwipeLayout$Status;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getRelativePosition"
+        native="false"
+        return="android.graphics.Rect"
+        jni-return="Landroid/graphics/Rect;"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)Landroid/graphics/Rect;">
+        <parameter
+          name="child"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getShowMode"
+        native="false"
+        return="com.daimajia.swipe.SwipeLayout.ShowMode"
+        jni-return="Lcom/daimajia/swipe/SwipeLayout$ShowMode;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/daimajia/swipe/SwipeLayout$ShowMode;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSurfaceView"
+        native="false"
+        return="android.view.ViewGroup"
+        jni-return="Landroid/view/ViewGroup;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Landroid/view/ViewGroup;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isSwipeEnabled"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Z" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isViewShowing"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;Landroid/graphics/Rect;Lcom/daimajia/swipe/SwipeLayout$DragEdge;IIII)Z">
+        <parameter
+          name="child"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="relativePosition"
+          type="android.graphics.Rect"
+          jni-type="Landroid/graphics/Rect;" />
+        <parameter
+          name="availableEdge"
+          type="com.daimajia.swipe.SwipeLayout.DragEdge"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$DragEdge;" />
+        <parameter
+          name="surfaceLeft"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceTop"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceRight"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceBottom"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isViewTotallyFirstShowed"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;Landroid/graphics/Rect;Lcom/daimajia/swipe/SwipeLayout$DragEdge;IIII)Z">
+        <parameter
+          name="child"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="relativePosition"
+          type="android.graphics.Rect"
+          jni-type="Landroid/graphics/Rect;" />
+        <parameter
+          name="edge"
+          type="com.daimajia.swipe.SwipeLayout.DragEdge"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$DragEdge;" />
+        <parameter
+          name="surfaceLeft"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceTop"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceRight"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="surfaceBottom"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onInterceptTouchEvent"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/MotionEvent;)Z">
+        <parameter
+          name="ev"
+          type="android.view.MotionEvent"
+          jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onLayout"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ZIIII)V">
+        <parameter
+          name="changed"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="l"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="t"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="r"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="b"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onMeasure"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(II)V">
+        <parameter
+          name="widthMeasureSpec"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="heightMeasureSpec"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onTouchEvent"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/MotionEvent;)Z">
+        <parameter
+          name="event"
+          type="android.view.MotionEvent"
+          jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="open"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="open"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="smooth"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="open"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ZZ)V">
+        <parameter
+          name="smooth"
+          type="boolean"
+          jni-type="Z" />
+        <parameter
+          name="notify"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeAllRevealListeners"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="childId"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeAllSwipeDeniers"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeOnLayoutListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout$OnLayout;)V">
+        <parameter
+          name="l"
+          type="com.daimajia.swipe.SwipeLayout.OnLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$OnLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeRevealListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILcom/daimajia/swipe/SwipeLayout$OnRevealListener;)V">
+        <parameter
+          name="childId"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="l"
+          type="com.daimajia.swipe.SwipeLayout.OnRevealListener"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$OnRevealListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeSwipeDenier"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout$SwipeDenier;)V">
+        <parameter
+          name="denier"
+          type="com.daimajia.swipe.SwipeLayout.SwipeDenier"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$SwipeDenier;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeSwipeListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout$SwipeListener;)V">
+        <parameter
+          name="l"
+          type="com.daimajia.swipe.SwipeLayout.SwipeListener"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$SwipeListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setDragDistance"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="max"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setDragEdge"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout$DragEdge;)V">
+        <parameter
+          name="dragEdge"
+          type="com.daimajia.swipe.SwipeLayout.DragEdge"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$DragEdge;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setOnDoubleClickListener"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout$DoubleClickListener;)V">
+        <parameter
+          name="doubleClickListener"
+          type="com.daimajia.swipe.SwipeLayout.DoubleClickListener"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$DoubleClickListener;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setShowMode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout$ShowMode;)V">
+        <parameter
+          name="mode"
+          type="com.daimajia.swipe.SwipeLayout.ShowMode"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$ShowMode;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setSwipeEnabled"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="enabled"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toggle"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="toggle"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Z)V">
+        <parameter
+          name="smooth"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v4/widget/ViewDragHelper$Callback;"
+      extends="android.support.v4.widget.ViewDragHelper.Callback"
+      extends-generic-aware="android.support.v4.widget.ViewDragHelper.Callback"
+      final="false"
+      name="SwipeLayout.1"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$1;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="clampViewPositionHorizontal"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;II)I">
+        <parameter
+          name="child"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="left"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="dx"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="clampViewPositionVertical"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;II)I">
+        <parameter
+          name="child"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="top"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="dy"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getViewHorizontalDragRange"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)I">
+        <parameter
+          name="child"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getViewVerticalDragRange"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;)I">
+        <parameter
+          name="child"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onViewPositionChanged"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;IIII)V">
+        <parameter
+          name="changedView"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="left"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="top"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="dx"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="dy"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onViewReleased"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;FF)V">
+        <parameter
+          name="releasedChild"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="xvel"
+          type="float"
+          jni-type="F" />
+        <parameter
+          name="yvel"
+          type="float"
+          jni-type="F" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="tryCaptureView"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;I)Z">
+        <parameter
+          name="child"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="pointerId"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SwipeLayout.2"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$2;"
+      static="true"
+      visibility="" />
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SwipeLayout.DoubleClickListener"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$DoubleClickListener;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onDoubleClick"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;Z)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+        <parameter
+          name="p1"
+          type="boolean"
+          jni-type="Z" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.daimajia.swipe.SwipeLayout.DragEdge&gt;"
+      final="true"
+      name="SwipeLayout.DragEdge"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$DragEdge;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.daimajia.swipe.SwipeLayout.DragEdge"
+        jni-return="Lcom/daimajia/swipe/SwipeLayout$DragEdge;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/daimajia/swipe/SwipeLayout$DragEdge;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.daimajia.swipe.SwipeLayout.DragEdge[]"
+        jni-return="[Lcom/daimajia/swipe/SwipeLayout$DragEdge;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/daimajia/swipe/SwipeLayout$DragEdge;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Bottom"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.SwipeLayout.DragEdge"
+        type-generic-aware="com.daimajia.swipe.SwipeLayout.DragEdge"
+        jni-signature="Lcom/daimajia/swipe/SwipeLayout$DragEdge;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Left"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.SwipeLayout.DragEdge"
+        type-generic-aware="com.daimajia.swipe.SwipeLayout.DragEdge"
+        jni-signature="Lcom/daimajia/swipe/SwipeLayout$DragEdge;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Right"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.SwipeLayout.DragEdge"
+        type-generic-aware="com.daimajia.swipe.SwipeLayout.DragEdge"
+        jni-signature="Lcom/daimajia/swipe/SwipeLayout$DragEdge;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Top"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.SwipeLayout.DragEdge"
+        type-generic-aware="com.daimajia.swipe.SwipeLayout.DragEdge"
+        jni-signature="Lcom/daimajia/swipe/SwipeLayout$DragEdge;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SwipeLayout.OnLayout"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$OnLayout;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onLayout"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SwipeLayout.OnRevealListener"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$OnRevealListener;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onReveal"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;Lcom/daimajia/swipe/SwipeLayout$DragEdge;FI)V">
+        <parameter
+          name="p0"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="p1"
+          type="com.daimajia.swipe.SwipeLayout.DragEdge"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout$DragEdge;" />
+        <parameter
+          name="p2"
+          type="float"
+          jni-type="F" />
+        <parameter
+          name="p3"
+          type="int"
+          jni-type="I" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.daimajia.swipe.SwipeLayout.ShowMode&gt;"
+      final="true"
+      name="SwipeLayout.ShowMode"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$ShowMode;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.daimajia.swipe.SwipeLayout.ShowMode"
+        jni-return="Lcom/daimajia/swipe/SwipeLayout$ShowMode;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/daimajia/swipe/SwipeLayout$ShowMode;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.daimajia.swipe.SwipeLayout.ShowMode[]"
+        jni-return="[Lcom/daimajia/swipe/SwipeLayout$ShowMode;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/daimajia/swipe/SwipeLayout$ShowMode;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="LayDown"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.SwipeLayout.ShowMode"
+        type-generic-aware="com.daimajia.swipe.SwipeLayout.ShowMode"
+        jni-signature="Lcom/daimajia/swipe/SwipeLayout$ShowMode;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="PullOut"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.SwipeLayout.ShowMode"
+        type-generic-aware="com.daimajia.swipe.SwipeLayout.ShowMode"
+        jni-signature="Lcom/daimajia/swipe/SwipeLayout$ShowMode;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.daimajia.swipe.SwipeLayout.Status&gt;"
+      final="true"
+      name="SwipeLayout.Status"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$Status;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.daimajia.swipe.SwipeLayout.Status"
+        jni-return="Lcom/daimajia/swipe/SwipeLayout$Status;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/daimajia/swipe/SwipeLayout$Status;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.daimajia.swipe.SwipeLayout.Status[]"
+        jni-return="[Lcom/daimajia/swipe/SwipeLayout$Status;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/daimajia/swipe/SwipeLayout$Status;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Close"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.SwipeLayout.Status"
+        type-generic-aware="com.daimajia.swipe.SwipeLayout.Status"
+        jni-signature="Lcom/daimajia/swipe/SwipeLayout$Status;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Middle"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.SwipeLayout.Status"
+        type-generic-aware="com.daimajia.swipe.SwipeLayout.Status"
+        jni-signature="Lcom/daimajia/swipe/SwipeLayout$Status;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Open"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.SwipeLayout.Status"
+        type-generic-aware="com.daimajia.swipe.SwipeLayout.Status"
+        jni-signature="Lcom/daimajia/swipe/SwipeLayout$Status;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SwipeLayout.SwipeDenier"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$SwipeDenier;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="shouldDenySwipe"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/MotionEvent;)Z">
+        <parameter
+          name="p0"
+          type="android.view.MotionEvent"
+          jni-type="Landroid/view/MotionEvent;" />
+      </method>
+    </interface>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Landroid/view/GestureDetector$SimpleOnGestureListener;"
+      extends="android.view.GestureDetector.SimpleOnGestureListener"
+      extends-generic-aware="android.view.GestureDetector.SimpleOnGestureListener"
+      final="false"
+      name="SwipeLayout.SwipeDetector"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$SwipeDetector;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onDoubleTap"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/MotionEvent;)Z">
+        <parameter
+          name="e"
+          type="android.view.MotionEvent"
+          jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onDown"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/MotionEvent;)Z">
+        <parameter
+          name="e"
+          type="android.view.MotionEvent"
+          jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onLongPress"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/MotionEvent;)V">
+        <parameter
+          name="e"
+          type="android.view.MotionEvent"
+          jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSingleTapConfirmed"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/MotionEvent;)Z">
+        <parameter
+          name="e"
+          type="android.view.MotionEvent"
+          jni-type="Landroid/view/MotionEvent;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onSingleTapUp"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/MotionEvent;)Z">
+        <parameter
+          name="e"
+          type="android.view.MotionEvent"
+          jni-type="Landroid/view/MotionEvent;" />
+      </method>
+    </class>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SwipeLayout.SwipeListener"
+      jni-signature="Lcom/daimajia/swipe/SwipeLayout$SwipeListener;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onClose"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onHandRelease"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;FF)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+        <parameter
+          name="p1"
+          type="float"
+          jni-type="F" />
+        <parameter
+          name="p2"
+          type="float"
+          jni-type="F" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onOpen"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onStartClose"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onStartOpen"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onUpdate"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;II)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p2"
+          type="int"
+          jni-type="I" />
+      </method>
+    </interface>
+  </package>
+  <package
+    name="com.daimajia.swipe.adapters"
+    jni-name="com/daimajia/swipe/adapters">
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Landroid/widget/ArrayAdapter;"
+      extends="android.widget.ArrayAdapter"
+      extends-generic-aware="android.widget.ArrayAdapter"
+      final="false"
+      name="ArraySwipeAdapter"
+      jni-signature="Lcom/daimajia/swipe/adapters/ArraySwipeAdapter;"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="T"
+          jni-classBound="Ljava/lang/Object;"
+          classBound="java.lang.Object"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeItemMangerInterface;" />
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeAdapterInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeAdapterInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeAdapterInterface;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ArraySwipeAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;I)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="resource"
+          type="int"
+          jni-type="I" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ArraySwipeAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;II)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="resource"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="textViewResourceId"
+          type="int"
+          jni-type="I" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ArraySwipeAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;IILjava/util/List;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="resource"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="textViewResourceId"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="objects"
+          type="java.util.List&lt;T&gt;"
+          jni-type="Ljava/util/List&lt;TT;&gt;;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ArraySwipeAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;II[Ljava/lang/Object;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="resource"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="textViewResourceId"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="objects"
+          type="T[]"
+          jni-type="[TT;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ArraySwipeAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;ILjava/util/List;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="resource"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="objects"
+          type="java.util.List&lt;T&gt;"
+          jni-type="Ljava/util/List&lt;TT;&gt;;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="ArraySwipeAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;I[Ljava/lang/Object;)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="resource"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="objects"
+          type="T[]"
+          jni-type="[TT;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllExcept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllItems"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getMode"
+        native="false"
+        return="com.daimajia.swipe.util.Attributes.Mode"
+        jni-return="Lcom/daimajia/swipe/util/Attributes$Mode;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenItems"
+        native="false"
+        return="java.util.List&lt;java.lang.Integer&gt;"
+        jni-return="Ljava/util/List&lt;Ljava/lang/Integer;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenLayouts"
+        native="false"
+        return="java.util.List&lt;com.daimajia.swipe.SwipeLayout&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/daimajia/swipe/SwipeLayout;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="convertView"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="parent"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isOpen"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Z">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="openItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeShownLayouts"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setMode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/util/Attributes$Mode;)V">
+        <parameter
+          name="mode"
+          type="com.daimajia.swipe.util.Attributes.Mode"
+          jni-type="Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      </method>
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Landroid/widget/BaseAdapter;"
+      extends="android.widget.BaseAdapter"
+      extends-generic-aware="android.widget.BaseAdapter"
+      final="false"
+      name="BaseSwipeAdapter"
+      jni-signature="Lcom/daimajia/swipe/adapters/BaseSwipeAdapter;"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeItemMangerInterface;" />
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeAdapterInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeAdapterInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeAdapterInterface;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="BaseSwipeAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllExcept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllItems"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="fillValues"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/view/View;)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="generateView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/view/ViewGroup;)Landroid/view/View;">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="p1"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getMode"
+        native="false"
+        return="com.daimajia.swipe.util.Attributes.Mode"
+        jni-return="Lcom/daimajia/swipe/util/Attributes$Mode;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenItems"
+        native="false"
+        return="java.util.List&lt;java.lang.Integer&gt;"
+        jni-return="Ljava/util/List&lt;Ljava/lang/Integer;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenLayouts"
+        native="false"
+        return="java.util.List&lt;com.daimajia.swipe.SwipeLayout&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/daimajia/swipe/SwipeLayout;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getSwipeLayoutResourceId"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="true"
+        name="getView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="convertView"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="parent"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isOpen"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Z">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="openItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeShownLayouts"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setMode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/util/Attributes$Mode;)V">
+        <parameter
+          name="mode"
+          type="com.daimajia.swipe.util.Attributes.Mode"
+          jni-type="Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mItemManger"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.implments.SwipeItemAdapterMangerImpl"
+        type-generic-aware="com.daimajia.swipe.implments.SwipeItemAdapterMangerImpl"
+        jni-signature="Lcom/daimajia/swipe/implments/SwipeItemAdapterMangerImpl;"
+        visibility="protected"
+        volatile="false" />
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v4/widget/CursorAdapter;"
+      extends="android.support.v4.widget.CursorAdapter"
+      extends-generic-aware="android.support.v4.widget.CursorAdapter"
+      final="false"
+      name="CursorSwipeAdapter"
+      jni-signature="Lcom/daimajia/swipe/adapters/CursorSwipeAdapter;"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeItemMangerInterface;" />
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeAdapterInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeAdapterInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeAdapterInterface;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CursorSwipeAdapter"
+        static="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/database/Cursor;I)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="c"
+          type="android.database.Cursor"
+          jni-type="Landroid/database/Cursor;" />
+        <parameter
+          name="flags"
+          type="int"
+          jni-type="I" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="CursorSwipeAdapter"
+        static="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;Landroid/database/Cursor;Z)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="c"
+          type="android.database.Cursor"
+          jni-type="Landroid/database/Cursor;" />
+        <parameter
+          name="autoRequery"
+          type="boolean"
+          jni-type="Z" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllExcept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getMode"
+        native="false"
+        return="com.daimajia.swipe.util.Attributes.Mode"
+        jni-return="Lcom/daimajia/swipe/util/Attributes$Mode;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenItems"
+        native="false"
+        return="java.util.List&lt;java.lang.Integer&gt;"
+        jni-return="Ljava/util/List&lt;Ljava/lang/Integer;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenLayouts"
+        native="false"
+        return="java.util.List&lt;com.daimajia.swipe.SwipeLayout&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/daimajia/swipe/SwipeLayout;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="convertView"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="parent"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isOpen"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Z">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="openItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeShownLayouts"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setMode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/util/Attributes$Mode;)V">
+        <parameter
+          name="mode"
+          type="com.daimajia.swipe.util.Attributes.Mode"
+          jni-type="Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      </method>
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v7/widget/RecyclerView$Adapter;"
+      extends="android.support.v7.widget.RecyclerView.Adapter"
+      extends-generic-aware="android.support.v7.widget.RecyclerView.Adapter&lt;VH&gt;"
+      final="false"
+      name="RecyclerSwipeAdapter"
+      jni-signature="Lcom/daimajia/swipe/adapters/RecyclerSwipeAdapter;"
+      static="false"
+      visibility="public">
+      <typeParameters>
+        <typeParameter
+          name="VH"
+          jni-classBound="Landroid/support/v7/widget/RecyclerView$ViewHolder;"
+          classBound="android.support.v7.widget.RecyclerView.ViewHolder"
+          interfaceBounds=""
+          jni-interfaceBounds="" />
+      </typeParameters>
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeItemMangerInterface;" />
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeAdapterInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeAdapterInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeAdapterInterface;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="RecyclerSwipeAdapter"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllExcept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllItems"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getMode"
+        native="false"
+        return="com.daimajia.swipe.util.Attributes.Mode"
+        jni-return="Lcom/daimajia/swipe/util/Attributes$Mode;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenItems"
+        native="false"
+        return="java.util.List&lt;java.lang.Integer&gt;"
+        jni-return="Ljava/util/List&lt;Ljava/lang/Integer;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenLayouts"
+        native="false"
+        return="java.util.List&lt;com.daimajia.swipe.SwipeLayout&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/daimajia/swipe/SwipeLayout;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isOpen"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Z">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onBindViewHolder"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$ViewHolder;I)V">
+        <parameter
+          name="p0"
+          type="VH"
+          jni-type="TVH;" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="onCreateViewHolder"
+        native="false"
+        return="VH"
+        jni-return="TVH;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/ViewGroup;I)Landroid/support/v7/widget/RecyclerView$ViewHolder;">
+        <parameter
+          name="p0"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="openItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeShownLayouts"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setMode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/util/Attributes$Mode;)V">
+        <parameter
+          name="mode"
+          type="com.daimajia.swipe.util.Attributes.Mode"
+          jni-type="Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mItemManger"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.implments.SwipeItemRecyclerMangerImpl"
+        type-generic-aware="com.daimajia.swipe.implments.SwipeItemRecyclerMangerImpl"
+        jni-signature="Lcom/daimajia/swipe/implments/SwipeItemRecyclerMangerImpl;"
+        visibility="public"
+        volatile="false" />
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Landroid/support/v4/widget/SimpleCursorAdapter;"
+      extends="android.support.v4.widget.SimpleCursorAdapter"
+      extends-generic-aware="android.support.v4.widget.SimpleCursorAdapter"
+      final="false"
+      name="SimpleCursorSwipeAdapter"
+      jni-signature="Lcom/daimajia/swipe/adapters/SimpleCursorSwipeAdapter;"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeItemMangerInterface;" />
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeAdapterInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeAdapterInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeAdapterInterface;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SimpleCursorSwipeAdapter"
+        static="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[I)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="layout"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="c"
+          type="android.database.Cursor"
+          jni-type="Landroid/database/Cursor;" />
+        <parameter
+          name="from"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+        <parameter
+          name="to"
+          type="int[]"
+          jni-type="[I" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SimpleCursorSwipeAdapter"
+        static="false"
+        visibility="protected"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[II)V">
+        <parameter
+          name="context"
+          type="android.content.Context"
+          jni-type="Landroid/content/Context;" />
+        <parameter
+          name="layout"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="c"
+          type="android.database.Cursor"
+          jni-type="Landroid/database/Cursor;" />
+        <parameter
+          name="from"
+          type="java.lang.String[]"
+          jni-type="[Ljava/lang/String;" />
+        <parameter
+          name="to"
+          type="int[]"
+          jni-type="[I" />
+        <parameter
+          name="flags"
+          type="int"
+          jni-type="I" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllExcept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getMode"
+        native="false"
+        return="com.daimajia.swipe.util.Attributes.Mode"
+        jni-return="Lcom/daimajia/swipe/util/Attributes$Mode;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenItems"
+        native="false"
+        return="java.util.List&lt;java.lang.Integer&gt;"
+        jni-return="Ljava/util/List&lt;Ljava/lang/Integer;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenLayouts"
+        native="false"
+        return="java.util.List&lt;com.daimajia.swipe.SwipeLayout&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/daimajia/swipe/SwipeLayout;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getView"
+        native="false"
+        return="android.view.View"
+        jni-return="Landroid/view/View;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+        <parameter
+          name="convertView"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="parent"
+          type="android.view.ViewGroup"
+          jni-type="Landroid/view/ViewGroup;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isOpen"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Z">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="openItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeShownLayouts"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setMode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/util/Attributes$Mode;)V">
+        <parameter
+          name="mode"
+          type="com.daimajia.swipe.util.Attributes.Mode"
+          jni-type="Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      </method>
+    </class>
+  </package>
+  <package
+    name="com.daimajia.swipe.implments"
+    jni-name="com/daimajia/swipe/implments">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/daimajia/swipe/implments/SwipeItemMangerImpl;"
+      extends="com.daimajia.swipe.implments.SwipeItemMangerImpl"
+      extends-generic-aware="com.daimajia.swipe.implments.SwipeItemMangerImpl"
+      final="false"
+      name="SwipeItemAdapterMangerImpl"
+      jni-signature="Lcom/daimajia/swipe/implments/SwipeItemAdapterMangerImpl;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SwipeItemAdapterMangerImpl"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/widget/BaseAdapter;)V">
+        <parameter
+          name="adapter"
+          type="android.widget.BaseAdapter"
+          jni-type="Landroid/widget/BaseAdapter;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="bindView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;I)V">
+        <parameter
+          name="target"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="initialize"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;I)V">
+        <parameter
+          name="target"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="updateConvertView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;I)V">
+        <parameter
+          name="target"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mAdapter"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="android.widget.BaseAdapter"
+        type-generic-aware="android.widget.BaseAdapter"
+        jni-signature="Landroid/widget/BaseAdapter;"
+        visibility="protected"
+        volatile="false" />
+    </class>
+    <class
+      abstract="true"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SwipeItemMangerImpl"
+      jni-signature="Lcom/daimajia/swipe/implments/SwipeItemMangerImpl;"
+      static="false"
+      visibility="public">
+      <implements
+        name="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        name-generic-aware="com.daimajia.swipe.interfaces.SwipeItemMangerInterface"
+        jni-type="Lcom/daimajia/swipe/interfaces/SwipeItemMangerInterface;" />
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SwipeItemMangerImpl"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$Adapter;)V">
+        <parameter
+          name="adapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+      </constructor>
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SwipeItemMangerImpl"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/widget/BaseAdapter;)V">
+        <parameter
+          name="adapter"
+          type="android.widget.BaseAdapter"
+          jni-type="Landroid/widget/BaseAdapter;" />
+      </constructor>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="bindView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;I)V">
+        <parameter
+          name="p0"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllExcept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllItems"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="closeItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getMode"
+        native="false"
+        return="com.daimajia.swipe.util.Attributes.Mode"
+        jni-return="Lcom/daimajia/swipe/util/Attributes$Mode;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenItems"
+        native="false"
+        return="java.util.List&lt;java.lang.Integer&gt;"
+        jni-return="Ljava/util/List&lt;Ljava/lang/Integer;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenLayouts"
+        native="false"
+        return="java.util.List&lt;com.daimajia.swipe.SwipeLayout&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/daimajia/swipe/SwipeLayout;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="getSwipeLayoutId"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="initialize"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;I)V">
+        <parameter
+          name="p0"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="isOpen"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Z">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="openItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="removeShownLayouts"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setMode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/util/Attributes$Mode;)V">
+        <parameter
+          name="mode"
+          type="com.daimajia.swipe.util.Attributes.Mode"
+          jni-type="Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="updateConvertView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;I)V">
+        <parameter
+          name="p0"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="p1"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="INVALID_POSITION"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        value="-1"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mBaseAdapter"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="android.widget.BaseAdapter"
+        type-generic-aware="android.widget.BaseAdapter"
+        jni-signature="Landroid/widget/BaseAdapter;"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mOpenPosition"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="int"
+        type-generic-aware="int"
+        jni-signature="I"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mOpenPositions"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.util.Set"
+        type-generic-aware="java.util.Set&lt;java.lang.Integer&gt;"
+        jni-signature="Ljava/util/Set;"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mRecyclerAdapter"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="android.support.v7.widget.RecyclerView.Adapter"
+        type-generic-aware="android.support.v7.widget.RecyclerView.Adapter"
+        jni-signature="Landroid/support/v7/widget/RecyclerView$Adapter;"
+        visibility="protected"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mShownLayouts"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="java.util.Set"
+        type-generic-aware="java.util.Set&lt;com.daimajia.swipe.SwipeLayout&gt;"
+        jni-signature="Ljava/util/Set;"
+        visibility="protected"
+        volatile="false" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SwipeItemMangerImpl.OnLayoutListener"
+      jni-signature="Lcom/daimajia/swipe/implments/SwipeItemMangerImpl$OnLayoutListener;"
+      static="false"
+      visibility="">
+      <implements
+        name="com.daimajia.swipe.SwipeLayout.OnLayout"
+        name-generic-aware="com.daimajia.swipe.SwipeLayout.OnLayout"
+        jni-type="Lcom/daimajia/swipe/SwipeLayout$OnLayout;" />
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onLayout"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="v"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setPosition"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/daimajia/swipe/SimpleSwipeListener;"
+      extends="com.daimajia.swipe.SimpleSwipeListener"
+      extends-generic-aware="com.daimajia.swipe.SimpleSwipeListener"
+      final="false"
+      name="SwipeItemMangerImpl.SwipeMemory"
+      jni-signature="Lcom/daimajia/swipe/implments/SwipeItemMangerImpl$SwipeMemory;"
+      static="false"
+      visibility="">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onClose"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onOpen"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="onStartOpen"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="layout"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="setPosition"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="SwipeItemMangerImpl.ValueBox"
+      jni-signature="Lcom/daimajia/swipe/implments/SwipeItemMangerImpl$ValueBox;"
+      static="false"
+      visibility="" />
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Lcom/daimajia/swipe/implments/SwipeItemMangerImpl;"
+      extends="com.daimajia.swipe.implments.SwipeItemMangerImpl"
+      extends-generic-aware="com.daimajia.swipe.implments.SwipeItemMangerImpl"
+      final="false"
+      name="SwipeItemRecyclerMangerImpl"
+      jni-signature="Lcom/daimajia/swipe/implments/SwipeItemRecyclerMangerImpl;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="SwipeItemRecyclerMangerImpl"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/support/v7/widget/RecyclerView$Adapter;)V">
+        <parameter
+          name="adapter"
+          type="android.support.v7.widget.RecyclerView.Adapter"
+          jni-type="Landroid/support/v7/widget/RecyclerView$Adapter;" />
+      </constructor>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="bindView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;I)V">
+        <parameter
+          name="target"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="initialize"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;I)V">
+        <parameter
+          name="target"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="updateConvertView"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Landroid/view/View;I)V">
+        <parameter
+          name="target"
+          type="android.view.View"
+          jni-type="Landroid/view/View;" />
+        <parameter
+          name="position"
+          type="int"
+          jni-type="I" />
+      </method>
+      <field
+        deprecated="not deprecated"
+        final="false"
+        name="mAdapter"
+        static="false"
+        synthetic="false"
+        transient="false"
+        type="android.support.v7.widget.RecyclerView.Adapter"
+        type-generic-aware="android.support.v7.widget.RecyclerView.Adapter"
+        jni-signature="Landroid/support/v7/widget/RecyclerView$Adapter;"
+        visibility="protected"
+        volatile="false" />
+    </class>
+  </package>
+  <package
+    name="com.daimajia.swipe.interfaces"
+    jni-name="com/daimajia/swipe/interfaces">
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SwipeAdapterInterface"
+      jni-signature="Lcom/daimajia/swipe/interfaces/SwipeAdapterInterface;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getSwipeLayoutResourceId"
+        native="false"
+        return="int"
+        jni-return="I"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)I">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+    </interface>
+    <interface
+      abstract="true"
+      deprecated="not deprecated"
+      final="false"
+      name="SwipeItemMangerInterface"
+      jni-signature="Lcom/daimajia/swipe/interfaces/SwipeItemMangerInterface;"
+      static="false"
+      visibility="public">
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllExcept"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="closeAllItems"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="closeItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getMode"
+        native="false"
+        return="com.daimajia.swipe.util.Attributes.Mode"
+        jni-return="Lcom/daimajia/swipe/util/Attributes$Mode;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenItems"
+        native="false"
+        return="java.util.List&lt;java.lang.Integer&gt;"
+        jni-return="Ljava/util/List&lt;Ljava/lang/Integer;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="getOpenLayouts"
+        native="false"
+        return="java.util.List&lt;com.daimajia.swipe.SwipeLayout&gt;"
+        jni-return="Ljava/util/List&lt;Lcom/daimajia/swipe/SwipeLayout;&gt;;"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()Ljava/util/List;" />
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="isOpen"
+        native="false"
+        return="boolean"
+        jni-return="Z"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)Z">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="openItem"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(I)V">
+        <parameter
+          name="p0"
+          type="int"
+          jni-type="I" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="removeShownLayouts"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/SwipeLayout;)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.SwipeLayout"
+          jni-type="Lcom/daimajia/swipe/SwipeLayout;" />
+      </method>
+      <method
+        abstract="true"
+        deprecated="not deprecated"
+        final="false"
+        name="setMode"
+        native="false"
+        return="void"
+        jni-return="V"
+        static="false"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Lcom/daimajia/swipe/util/Attributes$Mode;)V">
+        <parameter
+          name="p0"
+          type="com.daimajia.swipe.util.Attributes.Mode"
+          jni-type="Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      </method>
+    </interface>
+  </package>
+  <package
+    name="com.daimajia.swipe.util"
+    jni-name="com/daimajia/swipe/util">
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Object;"
+      extends="java.lang.Object"
+      extends-generic-aware="java.lang.Object"
+      final="false"
+      name="Attributes"
+      jni-signature="Lcom/daimajia/swipe/util/Attributes;"
+      static="false"
+      visibility="public">
+      <constructor
+        deprecated="not deprecated"
+        final="false"
+        name="Attributes"
+        static="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()V" />
+    </class>
+    <class
+      abstract="false"
+      deprecated="not deprecated"
+      jni-extends="Ljava/lang/Enum;"
+      extends="java.lang.Enum"
+      extends-generic-aware="java.lang.Enum&lt;com.daimajia.swipe.util.Attributes.Mode&gt;"
+      final="true"
+      name="Attributes.Mode"
+      jni-signature="Lcom/daimajia/swipe/util/Attributes$Mode;"
+      static="true"
+      visibility="public">
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="valueOf"
+        native="false"
+        return="com.daimajia.swipe.util.Attributes.Mode"
+        jni-return="Lcom/daimajia/swipe/util/Attributes$Mode;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="(Ljava/lang/String;)Lcom/daimajia/swipe/util/Attributes$Mode;">
+        <parameter
+          name="name"
+          type="java.lang.String"
+          jni-type="Ljava/lang/String;" />
+      </method>
+      <method
+        abstract="false"
+        deprecated="not deprecated"
+        final="false"
+        name="values"
+        native="false"
+        return="com.daimajia.swipe.util.Attributes.Mode[]"
+        jni-return="[Lcom/daimajia/swipe/util/Attributes$Mode;"
+        static="true"
+        synchronized="false"
+        visibility="public"
+        bridge="false"
+        synthetic="false"
+        jni-signature="()[Lcom/daimajia/swipe/util/Attributes$Mode;" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Multiple"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.util.Attributes.Mode"
+        type-generic-aware="com.daimajia.swipe.util.Attributes.Mode"
+        jni-signature="Lcom/daimajia/swipe/util/Attributes$Mode;"
+        visibility="public"
+        volatile="false" />
+      <field
+        deprecated="not deprecated"
+        final="true"
+        name="Single"
+        static="true"
+        synthetic="false"
+        transient="false"
+        type="com.daimajia.swipe.util.Attributes.Mode"
+        type-generic-aware="com.daimajia.swipe.util.Attributes.Mode"
+        jni-signature="Lcom/daimajia/swipe/util/Attributes$Mode;"
+        visibility="public"
+        volatile="false" />
+    </class>
+  </package>
+</api>

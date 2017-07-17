@@ -1,0 +1,11 @@
+﻿<Properties StartupConfiguration="{03AC403C-369D-4CCF-BF6D-82F3F9597046}|Default">
+  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../GitFolder/auchan-international/Auchan.Webservices/Common/BaseWebservice.cs" line="443" offsetX="725" offsetY="6630" expression="rawString" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MultiItemStartupConfigurations />
+</Properties>
